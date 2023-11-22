@@ -15,12 +15,12 @@ public class AuthController {
     public AuthController(AuthenticationService authenticationService) {
         this.authenticationService = authenticationService;
     }
-    @CrossOrigin("*")
+    @CrossOrigin(origins = "*")
     @PostMapping("/signup")
     public ResponseEntity<JwtAuthenticationResponse> signup(@RequestBody UserRequestDto request) {
         return ResponseEntity.ok(authenticationService.signup(request));
     }
-    @CrossOrigin("*")
+    @CrossOrigin(origins = "*")
     @PostMapping("/signin")
     public ResponseEntity<JwtAuthenticationResponse> signin(@RequestBody SigninRequest request) {
         return ResponseEntity.ok(authenticationService.signin(request));
