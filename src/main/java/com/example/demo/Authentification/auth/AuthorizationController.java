@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/hello")
-@CrossOrigin
+@CrossOrigin("*")
 public class AuthorizationController {
 
     @Secured("ADMIN")
