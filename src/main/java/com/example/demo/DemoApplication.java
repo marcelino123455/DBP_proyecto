@@ -28,7 +28,7 @@ public class DemoApplication implements CommandLineRunner {
 	@Autowired
 	private comicRepository comicRepository;
 
-	/*
+	
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
 			@Override
@@ -36,7 +36,7 @@ public class DemoApplication implements CommandLineRunner {
 				registry.addMapping("/**").allowedOrigins("/**").allowedMethods("*").allowedHeaders("*");
 			}
 		};
-	}*/
+	}
 	
 	@Override
 	public void run(String... args) throws Exception {
