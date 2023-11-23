@@ -19,6 +19,7 @@ import com.example.demo.infraestructure.comicRepository;
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
 
+	
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
@@ -29,7 +30,7 @@ public class DemoApplication implements CommandLineRunner {
 	@Autowired
 	private comicRepository comicRepository;
 
-	/*
+	
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
 			@Override
@@ -37,7 +38,7 @@ public class DemoApplication implements CommandLineRunner {
 				registry.addMapping("/**").allowedOrigins("/**").allowedMethods("*").allowedHeaders("*");
 			}
 		};
-	}*/
+	}
 	
 	@Override
 	public void run(String... args) throws Exception {
